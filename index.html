@@ -505,7 +505,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close>
+        <button type="button" class="modal__button--close" data-modal-close>
           <img
             src="./images/main-page/close-icon.jpg"
             alt="ikona zamykania okna"
@@ -513,33 +513,33 @@
             height="11"
           />
         </button>
-        <form class="my-form">
-          <h3 class="form-title">Zostaw swoje dane w formularzu ponizej</h3>
-          <fieldset class="fieldset">
-            <label for="name" class="label">Imię</label>
-            <svg class="icon-form">
+        <form class="form">
+          <h3 class="form__title">Zostaw swoje dane w formularzu ponizej</h3>
+          <fieldset class="form__fieldset">
+            <label for="name" class="form__label">Imię</label>
+            <svg class="form__icon">
               <use href="./images/sprite-svg/icons.svg#person"></use>
             </svg>
-            <input class="input" type="text" name="name" id="name" />
+            <input class="form__input" type="text" name="name" id="name" />
           </fieldset>
-          <fieldset class="fieldset">
-            <label for="tel" class="label">Telefon</label>
-            <svg class="icon-form">
+          <fieldset class="form__fieldset">
+            <label for="tel" class="form__label">Telefon</label>
+            <svg class="form__icon">
               <use href="./images/sprite-svg/icons.svg#phone-black"></use>
             </svg>
-            <input class="input" type="tel" name="tel" id="tel" />
+            <input class="form__input" type="tel" name="tel" id="tel" />
           </fieldset>
-          <fieldset class="fieldset">
-            <label for="e-mail" class="label">Email</label>
-            <svg class="icon-form">
+          <fieldset class="form__fieldset">
+            <label for="e-mail" class="form__label">Email</label>
+            <svg class="form__icon">
               <use href="./images/sprite-svg/icons.svg#email-black"></use>
             </svg>
-            <input class="input" type="email" name="email" id="e-mail" />
+            <input class="form__input" type="email" name="email" id="e-mail" />
           </fieldset>
-          <fieldset class="fieldset">
-            <label for="textarea" class="label">Komentarz</label>
+          <fieldset class="form__fieldset">
+            <label for="textarea" class="form__label">Komentarz</label>
             <textarea
-              class="input"
+              class="form__input"
               name="text-area"
               id="textarea"
               placeholder="Wprowadź tekst"
@@ -547,21 +547,21 @@
               cols="66"
             ></textarea>
           </fieldset>
-          <label class="checkbox-label">
+          <label class="form__label--checkbox">
             <input
-              class="checkbox-input"
+              class="form__input--checkbox"
               type="checkbox"
               name="checkbox"
-            /><span class="checkbox-text"
+            /><span class="form__text--checkbox"
               >Oświadczam iz akceptuje
-              <a class="checkbox-text-link" href="">Regulamin</a> i
-              <a class="checkbox-text-link" href=""
+              <a class="form__text--link" href="">Regulamin</a> i
+              <a class="form__text--link" href=""
                 >Politykę Prywatności</a
               ></span
             >
-            <span class="checkmark"></span>
+            <span class="form__checkmark"></span>
           </label>
-          <button class="modal-btn-send" type="submit" name="button">
+          <button class="form__button--send" type="submit" name="button">
             Wyślij
           </button>
         </form>
