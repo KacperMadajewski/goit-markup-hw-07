@@ -48,7 +48,7 @@ body {
   color: #000000;
 }
 
-.menu {
+.navigation {
   display: flex;
   list-style: none;
   gap: 46px;
@@ -56,7 +56,7 @@ body {
   margin-right: 345px;
 }
 
-.menu__link {
+.navigation__link {
   text-decoration: none;
   cursor: pointer;
   color: #212121;
@@ -65,16 +65,16 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu .menu__link:hover,
-.menu .menu__link:focus {
+.navigation .navigation__link:hover,
+.navigation .navigation__link:focus {
   color: var(--hoover-color);
 }
 
-.menu__underline {
+.navigation__underline {
   position: relative;
 }
 
-.menu__underline::after {
+.navigation__underline::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -133,7 +133,9 @@ body {
 /* --------MAIN---START-------- */
 /* ---------------------------- */
 
-/* --------Section--Baner------- */
+/* >>>>>INDEX.HTM---START<<<<<< */
+
+/* -------Section--Baner------- */
 
 .banner {
   background: rgba(47, 48, 58, 0.4);
@@ -406,7 +408,125 @@ body {
   fill: var(--hoover-color);
 }
 
+/* >>>>>>INDEX.HTML---END<<<<<< */
 
+/* >>>PORTFOLIO.HTML---START<<< */
+
+.menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 8px;
+  padding-bottom: 34px;
+  padding-top: 94px;
+}
+.menu__button {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition-property: background, box-shadow, border, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu__button:hover {
+  background: var(--hoover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: var(--white-item-color);
+  cursor: pointer;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.catalogue {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.catalogue__background {
+  width: 370px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  transition-property: border, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalogue__background:hover {
+  cursor: pointer;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.catalogue__photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.catalogue__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  margin: 0;
+  background: rgba(33, 150, 243, 0.9);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalogue__overlay--text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  color: var(--white-item-color);
+  margin-left: 24px;
+  margin-top: 49px;
+}
+
+.catalogue__background:hover .catalogue__overlay {
+  bottom: 0;
+}
+
+.catalogue__title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  padding-left: 24px;
+}
+
+.catalogue__type {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--links-text-color);
+  padding-left: 24px;
+}
+
+/* >>>>PORTFOLIO.HTML---END<<<< */
 
 /* ---------------------------- */
 /* ---------MAIN---END--------- */
@@ -828,124 +948,6 @@ body {
 
 .studio-color {
   color: #000000;
-}
-
-
-
-
-
-
-.menu-2 {
-  display: flex;
-  list-style: none;
-  justify-content: center;
-  gap: 8px;
-  padding-bottom: 34px;
-  padding-top: 94px;
-}
-
-.open-menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 0;
-  list-style: none;
-  justify-content: space-between;
-}
-
-.background-menu {
-  width: 370px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  transition-property: border, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.background-menu:hover {
-  cursor: pointer;
-  border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.background-photo {
-  position: relative;
-  overflow: hidden;
-}
-
-.overlay-portfolio {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  bottom: -100%;
-  margin: 0;
-  background: rgba(33, 150, 243, 0.9);
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.overlay-portfolio-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 28px;
-  letter-spacing: 0.03em;
-  color: var(--white-item-color);
-  margin-left: 24px;
-  margin-top: 49px;
-}
-
-.background-menu:hover .overlay-portfolio {
-  bottom: 0;
-}
-
-.navy-btn {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  background: #f5f4fa;
-  border-radius: 4px;
-  border: none;
-  padding: 6px 22px;
-  transition-property: background, box-shadow, border, color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.navy-btn:hover {
-  background: var(--hoover-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  color: var(--white-item-color);
-  cursor: pointer;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-.work-type {
-  font-family: "Roboto";
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--links-text-color);
-  padding-left: 24px;
-}
-.picture-title {
-  font-family: "Roboto";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  padding-left: 24px;
 }
 
 
