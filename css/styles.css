@@ -17,6 +17,11 @@ body {
   padding: 0 15px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* --------------------------- */
 /* -------HEADER---START------  */
 /* --------------------------- */
@@ -28,12 +33,12 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* to było "link-1" */
+
 .header__link {
   text-decoration: none;
   cursor: pointer;
 }
-/* to było "header-logo" */
+
 .header__logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -126,8 +131,6 @@ body {
 /* ---------------------------- */
 /* --------HEADER---END-------- */
 /* ---------------------------- */
-
-
 
 /* ---------------------------- */
 /* --------MAIN---START-------- */
@@ -226,11 +229,8 @@ body {
   color: var(--links-text-color);
 }
 
-
 /* ----------services---------- */
 
-
-/* ----wcześniej "section-title"---- */
 .services__title {
   font-family: "Roboto";
   font-weight: 700;
@@ -240,7 +240,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* -------wcześniej "section-table"------ */
 .services__table {
   display: flex;
   list-style: none;
@@ -249,7 +248,6 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-/* ------wcześniej "section-table-box"------- */
 .services__table--box {
   display: flex;
   width: 370px;
@@ -279,9 +277,7 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 
-
 /* ------------team----------- */
-
 
 .team {
   background-color: #f5f4fa;
@@ -319,7 +315,6 @@ body {
   color: var(--links-text-color);
 }
 
-
 .team__photos--background {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -327,7 +322,6 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-/* -----wcześniej "social-icon-box"------ */
 .team__icon--box {
   display: flex;
   justify-content: center;
@@ -355,7 +349,6 @@ body {
   fill: var(--white-item-color);
   background-color: var(--hoover-color);
 }
-
 
 /* ---------clients--------- */
 
@@ -532,7 +525,6 @@ body {
 /* ---------MAIN---END--------- */
 /* ---------------------------- */
 
-
 /* ---------------------------- */
 /* -------FOOTER---START------- */
 /* ---------------------------- */
@@ -675,7 +667,7 @@ body {
   background: transparent;
 }
 
-.newsletter__submit{
+.newsletter__submit {
   display: flex;
   position: absolute;
   bottom: 0;
@@ -706,11 +698,9 @@ body {
   margin-left: 24px;
 }
 
-
 /* ---------------------------- */
 /* --------FOOTER---END-------- */
 /* ---------------------------- */
-
 
 /* ---------------------------- */
 /* -------MODAL---START-------- */
@@ -906,58 +896,6 @@ body {
   color: var(--white-item-color);
 }
 
-
-
-
 /* ---------------------------- */
 /* --------MODAL---END--------- */
 /* ---------------------------- */
-
-
-.navy-links {
-  display: flex;
-  list-style: none;
-  margin-right: 364px;
-  gap: 46px;
-}
-
-.navy-links .link:hover,
-.navy-links .link:focus {
-  color: var(--hoover-color);
-}
-
-.contact-links {
-  display: flex;
-  gap: 50px;
-}
-
-.contact-links .link {
-  color: var(--links-text-color);
-}
-.contact-links .link:hover,
-.contact-links .link:focus {
-  color: var(--hoover-color);
-}
-
-
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.studio-color {
-  color: #000000;
-}
-
-
-.label-top {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
