@@ -200,7 +200,7 @@ body {
   width: 270px;
 }
 
-.informations__icon--box {
+.informations__icon-box {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
@@ -240,7 +240,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.services__table {
+.services {
   display: flex;
   list-style: none;
   max-width: 1170px;
@@ -248,7 +248,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.services__table--box {
+.services__box {
   display: flex;
   width: 370px;
   position: relative;
@@ -322,7 +322,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__icon--box {
+.team__icon-box {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -361,7 +361,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.clients__table {
+.clients {
   display: flex;
   list-style: none;
   max-width: 1170px;
@@ -537,7 +537,7 @@ body {
   display: flex;
 }
 
-.footer__info--box {
+.footer__info-box {
   margin-top: 42px;
   margin-bottom: 60px;
 }
@@ -610,7 +610,7 @@ body {
   margin-top: 0px;
 }
 
-.join__icon--box {
+.join__icon-box {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -821,12 +821,12 @@ body {
   color: #212121;
 }
 
-.form .form__input--checkbox {
+.form .form__input-checkbox {
   margin-right: 8px;
   cursor: pointer;
 }
 
-.form .form__label--checkbox {
+.form .form__label-checkbox {
   margin-left: 55px;
   display: flex;
   cursor: pointer;
@@ -834,14 +834,14 @@ body {
   align-items: center;
 }
 
-.form__label--checkbox input {
+.form__label-checkbox input {
   position: absolute;
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.form__label--checkbox .form__checkmark {
+.form__label-checkbox .form__checkmark {
   position: absolute;
   width: 16px;
   height: 15px;
@@ -858,11 +858,11 @@ body {
   display: none;
 }
 
-.form__label--checkbox input:checked ~ .form__checkmark::after {
+.form__label-checkbox input:checked ~ .form__checkmark::after {
   display: block;
 }
 
-.form__text--checkbox {
+.form__text-checkbox {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;

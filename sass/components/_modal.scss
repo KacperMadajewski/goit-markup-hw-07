@@ -56,12 +56,12 @@
     color: #212121;
   }
 
-  .form__input--checkbox {
+  .form__input-checkbox {
     margin-right: 8px;
     cursor: pointer;
   }
 
-  .form__label--checkbox {
+  .form__label-checkbox {
     margin-left: 55px;
     display: flex;
     cursor: pointer;
@@ -117,7 +117,7 @@
   fill: var(--hoover-color);
 }
 
-.form__label--checkbox input {
+.form__label-checkbox input {
   position: absolute;
   width: 0;
   height: 0;
@@ -132,11 +132,11 @@
   display: none;
 }
 
-.form__label--checkbox input:checked ~ .form__checkmark::after {
+.form__label-checkbox input:checked ~ .form__checkmark::after {
   display: block;
 }
 
-.form__text--checkbox {
+.form__text-checkbox {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
